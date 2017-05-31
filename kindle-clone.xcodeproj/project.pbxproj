@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		F12864691EDE3AC000B92D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12864681EDE3AC000B92D8E /* AppDelegate.swift */; };
 		F128646B1EDE3AC000B92D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128646A1EDE3AC000B92D8E /* ViewController.swift */; };
-		F128646E1EDE3AC000B92D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F128646C1EDE3AC000B92D8E /* Main.storyboard */; };
 		F12864701EDE3AC000B92D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F128646F1EDE3AC000B92D8E /* Assets.xcassets */; };
 		F12864731EDE3AC000B92D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12864711EDE3AC000B92D8E /* LaunchScreen.storyboard */; };
+		F16BFB221EDF113900A20A78 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16BFB211EDF113900A20A78 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F12864651EDE3AC000B92D8E /* kindle-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kindle-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12864681EDE3AC000B92D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F128646A1EDE3AC000B92D8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F128646D1EDE3AC000B92D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F128646F1EDE3AC000B92D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12864721EDE3AC000B92D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12864741EDE3AC000B92D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16BFB211EDF113900A20A78 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				F12864681EDE3AC000B92D8E /* AppDelegate.swift */,
 				F128646A1EDE3AC000B92D8E /* ViewController.swift */,
-				F128646C1EDE3AC000B92D8E /* Main.storyboard */,
+				F16BFB211EDF113900A20A78 /* Models.swift */,
 				F128646F1EDE3AC000B92D8E /* Assets.xcassets */,
 				F12864711EDE3AC000B92D8E /* LaunchScreen.storyboard */,
 				F12864741EDE3AC000B92D8E /* Info.plist */,
@@ -126,7 +126,6 @@
 			files = (
 				F12864731EDE3AC000B92D8E /* LaunchScreen.storyboard in Resources */,
 				F12864701EDE3AC000B92D8E /* Assets.xcassets in Resources */,
-				F128646E1EDE3AC000B92D8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16BFB221EDF113900A20A78 /* Models.swift in Sources */,
 				F128646B1EDE3AC000B92D8E /* ViewController.swift in Sources */,
 				F12864691EDE3AC000B92D8E /* AppDelegate.swift in Sources */,
 			);
@@ -145,14 +145,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F128646C1EDE3AC000B92D8E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F128646D1EDE3AC000B92D8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F12864711EDE3AC000B92D8E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,6 +292,7 @@
 				F12864791EDE3AC000B92D8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
