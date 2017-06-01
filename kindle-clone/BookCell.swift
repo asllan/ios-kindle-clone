@@ -12,7 +12,8 @@ class BookCell: UITableViewCell {
     
     let coverImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = #imageLiteral(resourceName: "steve_jobs")
         return imageView
     }()
     
@@ -20,6 +21,7 @@ class BookCell: UITableViewCell {
         let label = UILabel()
         label.text = "This is the text for the title of our book inside of our cell"
         label.backgroundColor = .blue
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -27,6 +29,7 @@ class BookCell: UITableViewCell {
         let label = UILabel()
         label.text = "This is some author for the book that we have in this row"
         label.backgroundColor = .green
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -37,15 +40,23 @@ class BookCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = .yellow
         
         addSubview(coverImageView)
-        coverImageView.frame = CGRect(x: 8, y: 8, width: 50, height: 64)
+        coverImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
+        coverImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
+        coverImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8).isActive = true
+        coverImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
         
         addSubview(titleLable)
-        titleLable.frame = CGRect(x: 66, y: 20, width: UIScreen.main.bounds.width, height: 20)
+        titleLable.leftAnchor.constraint(equalTo: coverImageView.rightAnchor, constant: 8).isActive = true
+        titleLable.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8).isActive = true
+        titleLable.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        titleLable.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -12).isActive = true
         
         addSubview(authorLabel)
-        authorLabel.frame = CGRect(x: 66, y: 48, width: 200, height: 20)
+        authorLabel.leftAnchor.constraint(equalTo: coverImageView.rightAnchor, constant: 8).isActive = true
+        authorLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8).isActive = true
+        authorLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        authorLabel.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 4).isActive = true
     }
 }
