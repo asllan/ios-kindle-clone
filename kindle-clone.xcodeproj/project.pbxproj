@@ -14,6 +14,7 @@
 		F16BFB221EDF113900A20A78 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16BFB211EDF113900A20A78 /* Models.swift */; };
 		F1BD5E201EE0545600CF8354 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD5E1F1EE0545600CF8354 /* BookCell.swift */; };
 		F1BD5E221EE0A2C500CF8354 /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD5E211EE0A2C500CF8354 /* BookPagerController.swift */; };
+		F1BD5E241EE0B63500CF8354 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD5E231EE0B63500CF8354 /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F16BFB211EDF113900A20A78 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F1BD5E1F1EE0545600CF8354 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		F1BD5E211EE0A2C500CF8354 /* BookPagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
+		F1BD5E231EE0B63500CF8354 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F12864741EDE3AC000B92D8E /* Info.plist */,
 				F1BD5E1F1EE0545600CF8354 /* BookCell.swift */,
 				F1BD5E211EE0A2C500CF8354 /* BookPagerController.swift */,
+				F1BD5E231EE0B63500CF8354 /* PageCell.swift */,
 			);
 			path = "kindle-clone";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				F1BD5E201EE0545600CF8354 /* BookCell.swift in Sources */,
 				F1BD5E221EE0A2C500CF8354 /* BookPagerController.swift in Sources */,
+				F1BD5E241EE0B63500CF8354 /* PageCell.swift in Sources */,
 				F16BFB221EDF113900A20A78 /* Models.swift in Sources */,
 				F128646B1EDE3AC000B92D8E /* ViewController.swift in Sources */,
 				F12864691EDE3AC000B92D8E /* AppDelegate.swift in Sources */,
