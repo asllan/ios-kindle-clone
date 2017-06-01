@@ -40,6 +40,13 @@ class ViewController: UITableViewController {
         return 0
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let layout = UICollectionViewFlowLayout();
+        let viewController = BookPagerController(collectionViewLayout: layout)
+        let navContoller = UINavigationController(rootViewController: viewController)
+        present(navContoller, animated: true, completion: nil)
+    }
+    
     func setupBooks() {
         let page1 = Page(number: 1, text: "Text for the first page")
         let page2 = Page(number: 2, text: "This is text for the second page")
