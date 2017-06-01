@@ -12,6 +12,7 @@
 		F12864701EDE3AC000B92D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F128646F1EDE3AC000B92D8E /* Assets.xcassets */; };
 		F12864731EDE3AC000B92D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12864711EDE3AC000B92D8E /* LaunchScreen.storyboard */; };
 		F16BFB221EDF113900A20A78 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16BFB211EDF113900A20A78 /* Models.swift */; };
+		F1BD5E201EE0545600CF8354 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BD5E1F1EE0545600CF8354 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F12864721EDE3AC000B92D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12864741EDE3AC000B92D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16BFB211EDF113900A20A78 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F1BD5E1F1EE0545600CF8354 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				F128646F1EDE3AC000B92D8E /* Assets.xcassets */,
 				F12864711EDE3AC000B92D8E /* LaunchScreen.storyboard */,
 				F12864741EDE3AC000B92D8E /* Info.plist */,
+				F1BD5E1F1EE0545600CF8354 /* BookCell.swift */,
 			);
 			path = "kindle-clone";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BD5E201EE0545600CF8354 /* BookCell.swift in Sources */,
 				F16BFB221EDF113900A20A78 /* Models.swift in Sources */,
 				F128646B1EDE3AC000B92D8E /* ViewController.swift in Sources */,
 				F12864691EDE3AC000B92D8E /* AppDelegate.swift in Sources */,
