@@ -10,25 +10,30 @@ import UIKit
 
 class BookCell: UITableViewCell {
     
-    let coverImageView: UIImageView = {
+    var book: Book? {
+        didSet {
+            coverImageView.image = book?.image
+            titleLable.text = book?.title
+            authorLabel.text = book?.author
+        }
+    }
+    
+    private let coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = #imageLiteral(resourceName: "steve_jobs")
         return imageView
     }()
     
-    let titleLable: UILabel = {
+    private let titleLable: UILabel = {
         let label = UILabel()
         label.text = "This is the text for the title of our book inside of our cell"
-        label.backgroundColor = .blue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let authorLabel: UILabel = {
+    private let authorLabel: UILabel = {
         let label = UILabel()
         label.text = "This is some author for the book that we have in this row"
-        label.backgroundColor = .green
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
