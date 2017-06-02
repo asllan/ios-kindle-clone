@@ -9,10 +9,12 @@
 import UIKit
 
 class BookPagerController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+
+    var book: Book?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Book"
+        navigationItem.title = book?.title
         
         collectionView?.backgroundColor = .white
         collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
