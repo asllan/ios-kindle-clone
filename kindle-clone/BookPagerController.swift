@@ -14,18 +14,23 @@ class BookPagerController: UICollectionViewController, UICollectionViewDelegateF
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = book?.title
-        
+
         collectionView?.backgroundColor = .white
         collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
-        
+        collectionView?.isPagingEnabled = true
+
         let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.scrollDirection = .horizontal
         layout?.minimumLineSpacing = 0
-        
-        collectionView?.isPagingEnabled = true
+
+        navigationItem.title = book?.title
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(handleCloseBook))
     }
-    
+
+    func handleCloseBook() {
+        dismiss(animated: true)
+    }
+
     // the method in UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height - 44 - 20)
