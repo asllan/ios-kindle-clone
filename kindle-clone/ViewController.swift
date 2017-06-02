@@ -32,8 +32,11 @@ class ViewController: UITableViewController {
                     return
                 }
                 guard let data = data else { return }
-                if let dataAsString = String(data: data, encoding: .utf8) {
-                    print(dataAsString)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                    print(json)
+                } catch let jsonError {
+                    print("Failed to parse JSON properly", jsonError)
                 }
             }.resume()
         }
