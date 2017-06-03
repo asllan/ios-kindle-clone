@@ -38,12 +38,8 @@ class ViewController: UITableViewController {
 
                     self.books = []
                     for bookDictionary in bookDictionaries {
-                        if let title = bookDictionary["title"] as? String,
-                                let author = bookDictionary["author"] as? String {
-                            let book = Book(title: title, author: author,
-                                    image: #imageLiteral(resourceName:"steve_jobs"), pages: [])
-                            self.books?.append(book)
-                        }
+                        let book = Book(bookDictionary: bookDictionary)
+                        self.books?.append(book)
                     }
 
                     DispatchQueue.main.async {
