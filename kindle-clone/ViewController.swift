@@ -15,13 +15,12 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchBooks()
+        
         tableView.register(BookCell.self, forCellReuseIdentifier: "cellId")
         tableView.tableFooterView = UIView()
         
         navigationItem.title = "Kindle"
-        
-        setupBooks()
-        fetchBooks()
     }
 
     func fetchBooks() {
