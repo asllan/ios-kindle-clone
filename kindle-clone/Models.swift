@@ -28,11 +28,10 @@ class Book {
         
         var bookPages = [Page]()
         if let pageDictionaries = bookDictionary["pages"] as? [[String: Any]] {
-            var i: Int = 1
             for pageDictionary in pageDictionaries {
                 if let text = pageDictionary["text"] as? String {
-                    let page = Page(number: i, text: text)
-                    i = i + 1
+                    let num = pageDictionary["id"] as? Int ?? 0
+                    let page = Page(number: num, text: text)
                     bookPages.append(page)
                 }
             }
