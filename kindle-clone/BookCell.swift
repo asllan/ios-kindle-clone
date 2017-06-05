@@ -46,6 +46,7 @@ class BookCell: UITableViewCell {
         label.text = "This is the text for the title of our book inside of our cell"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
     
