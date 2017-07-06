@@ -7,3 +7,6 @@ the Amazon Kindle clone app
 <td><img src="/images/screenshot-page.png" alt="Screenshot of Kindle Main" height=600></td>
 </tr>
 </table>
+
+## References
+https://www.letsbuildthatapp.com/basic-training
